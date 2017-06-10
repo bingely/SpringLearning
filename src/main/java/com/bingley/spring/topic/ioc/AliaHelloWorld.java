@@ -1,7 +1,7 @@
-package com.bingley.spring.createobject;
+package com.bingley.spring.topic.ioc;
 
-public class HelloWorld {
-	public HelloWorld(){
+public class AliaHelloWorld {
+	public AliaHelloWorld(){
 		System.out.println("new instance");
 	}
 	public void hello(){

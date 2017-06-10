@@ -6,7 +6,9 @@
 
     <!--通过这个文件加载其他路径下的xml文件-->
 
-     <import
-         resource="com/bingley/spring/createobject/applicationContext-createobject-method.xml"/>
-
+    <import
+        resource="com/bingley/spring/topic/createobj/method/applicationContext-createobject-method.xml"/>
+    <import
+        resource="com/bingley/spring/topic/createobj/when/applicationContext-createobejct-when.xml"/>
+    <import resource="com/bingley/spring/topic/ioc/applicationContext-alias.xml"/>
 </beans>

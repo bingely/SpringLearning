@@ -1,4 +1,4 @@
-package main.com.bingley.spring.aop;
+package com.bingley.spring.aop;
 
 import com.bingley.spring.aop.Action;
 

@@ -1,7 +1,7 @@
-package com.bingley.spring.when;
+package com.bingley.spring.topic.createobj.when;
 
-public class HelloWorld {
-	public HelloWorld(){
+public class WhenHelloWorld {
+	public WhenHelloWorld(){
 		System.out.println("new instance ------");
 	}
 	public void hello(){

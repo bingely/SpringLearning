@@ -1,4 +1,4 @@
-package main.com.bingley.spring.el;
+package com.bingley.spring.el;
 
 import org.springframework.context.annotation.Scope;
 

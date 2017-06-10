@@ -1,9 +1,10 @@
-package main.com.bingley.spring;
+package com.bingley.spring;
+
+import com.bingley.spring.aop.demo.UseFunctionService;
+import com.bingley.spring.utils.MyConfig;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-import main.com.bingley.spring.aop.demo.MyConfig;
-import main.com.bingley.spring.aop.demo.UseFunctionService;
 
 /**
  * Created by SAM on 2017/6/8.

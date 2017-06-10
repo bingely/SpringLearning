@@ -1,4 +1,4 @@
-package main.com.bingley.spring.aop;
+package com.bingley.spring.aop;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;

@@ -1,5 +1,7 @@
 package main.com.bingley.spring.aop;
 
+import com.bingley.spring.aop.Action;
+
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.After;
 import org.aspectj.lang.annotation.Aspect;

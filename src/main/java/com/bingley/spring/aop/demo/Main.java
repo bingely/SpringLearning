@@ -1,4 +1,6 @@
-package main.com.bingley.spring.aop.demo;
+package com.bingley.spring.aop.demo;
+
+import com.bingley.spring.utils.MyConfig;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 

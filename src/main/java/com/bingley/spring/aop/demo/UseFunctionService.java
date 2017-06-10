@@ -1,4 +1,4 @@
-package main.com.bingley.spring.aop.demo;
+package com.bingley.spring.aop.demo;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

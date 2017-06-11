@@ -10,5 +10,5 @@
         resource="com/bingley/spring/topic/createobj/method/applicationContext-createobject-method.xml"/>
     <import
         resource="com/bingley/spring/topic/createobj/when/applicationContext-createobejct-when.xml"/>
-    <import resource="com/bingley/spring/topic/ioc/applicationContext-alias.xml"/>
+    <import resource="com/bingley/spring/topic/ioc/alia/applicationContext-alias.xml"/>
 </beans>

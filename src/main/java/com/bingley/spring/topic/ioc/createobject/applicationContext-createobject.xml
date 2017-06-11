@@ -3,9 +3,13 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
            http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
-  	<bean id="helloWorld_Alias" class="com.bingley.spring.topic.ioc.AliaHelloWorld"></bean>
-  	<!-- 
-  		name的属性和bean的id对应
-  	 -->
-  	<alias name="helloWorld_Alias" alias="王二麻子"/>
+   <!-- 
+   		beans
+   		  把一个类放入到spring容器中，该类就是一个bean
+    -->
+    <!-- 
+    	id 唯一标示符
+    	class表示类的全名
+     -->
+    <bean id="helloWorld" class="cn.itcast.spring.sh.ioc.createobject.HelloWorld"></bean>
 </beans>

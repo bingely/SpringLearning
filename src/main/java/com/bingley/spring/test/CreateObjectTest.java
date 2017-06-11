@@ -3,7 +3,7 @@ package com.bingley.spring.test;
 
 import com.bingley.spring.topic.createobj.method.HelloWorld;
 import com.bingley.spring.topic.createobj.when.WhenHelloWorld;
-import com.bingley.spring.topic.ioc.AliaHelloWorld;
+import com.bingley.spring.topic.ioc.alia.AliaHelloWorld;
 
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
@@ -50,6 +50,7 @@ public class CreateObjectTest {
 
 	@Test
 	public void testWhen(){
+		//如果lazy-init为"true",在context.getBean时才要创建对象
 		ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 		System.out.println("aa");
 		WhenHelloWorld helloWorld = (WhenHelloWorld) context.getBean("helloWhen");

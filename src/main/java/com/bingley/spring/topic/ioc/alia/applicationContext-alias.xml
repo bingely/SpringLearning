@@ -3,5 +3,9 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
            http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
-  	<bean id="helloWhen" class="com.bingley.spring.topic.createobj.when.WhenHelloWorld" lazy-init="default"></bean>
+  	<bean id="helloWorld_Alias" class="com.bingley.spring.topic.ioc.alia.AliaHelloWorld"></bean>
+  	<!-- 
+  		name的属性和bean的id对应
+  	 -->
+  	<alias name="helloWorld_Alias" alias="王二麻子"/>
 </beans>

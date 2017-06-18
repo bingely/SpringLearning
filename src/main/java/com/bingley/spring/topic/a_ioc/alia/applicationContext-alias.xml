@@ -3,7 +3,7 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
            http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
-  	<bean id="helloWorld_Alias" class="com.bingley.spring.topic.ioc.alia.AliaHelloWorld"></bean>
+  	<bean id="helloWorld_Alias" class="com.bingley.spring.topic.a_ioc.alia.AliaHelloWorld"></bean>
   	<!-- 
   		name的属性和bean的id对应
   	 -->

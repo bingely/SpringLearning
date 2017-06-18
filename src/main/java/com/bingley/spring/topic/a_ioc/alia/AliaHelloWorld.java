@@ -1,4 +1,4 @@
-package com.bingley.spring.topic.ioc.alia;
+package com.bingley.spring.topic.a_ioc.alia;
 
 public class AliaHelloWorld {
 	public AliaHelloWorld(){

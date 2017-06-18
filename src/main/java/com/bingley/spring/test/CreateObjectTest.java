@@ -3,7 +3,7 @@ package com.bingley.spring.test;
 
 import com.bingley.spring.topic.createobj.method.HelloWorld;
 import com.bingley.spring.topic.createobj.when.WhenHelloWorld;
-import com.bingley.spring.topic.ioc.alia.AliaHelloWorld;
+import com.bingley.spring.topic.a_ioc.alia.AliaHelloWorld;
 
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;

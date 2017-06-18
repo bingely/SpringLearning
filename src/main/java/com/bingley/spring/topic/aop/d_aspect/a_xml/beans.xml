@@ -7,9 +7,9 @@
        					   http://www.springframework.org/schema/aop 
        					   http://www.springframework.org/schema/aop/spring-aop.xsd">
 	<!-- 1 创建目标类 -->
-	<bean id="userServiceId" class="com.itheima.d_aspect.a_xml.UserServiceImpl"></bean>
+	<bean id="userServiceId" class="com.bingley.spring.topic.aop.d_aspect.a_xml.UserServiceImpl"></bean>
 	<!-- 2 创建切面类（通知） -->
-	<bean id="myAspectId" class="com.itheima.d_aspect.a_xml.MyAspect"></bean>
+	<bean id="myAspectId" class="com.bingley.spring.topic.aop.d_aspect.a_xml.MyAspect"></bean>
 	<!-- 3 aop编程 
 		<aop:aspect> 将切面类 声明“切面”，从而获得通知（方法）
 			ref 切面类引用
@@ -19,7 +19,7 @@
 	-->
 	<aop:config>
 		<aop:aspect ref="myAspectId">
-			<aop:pointcut expression="execution(* com.itheima.d_aspect.a_xml.UserServiceImpl.*(..))" id="myPointCut"/>
+			<aop:pointcut expression="execution(* com.bingley.spring.topic.aop.d_aspect.a_xml.UserServiceImpl.*(..))" id="myPointCut"/>
 			
 			<!-- 3.1 前置通知 
 				<aop:before method="" pointcut="" pointcut-ref=""/>

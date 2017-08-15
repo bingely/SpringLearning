@@ -13,7 +13,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	<!-- parameterType：输入参数的java类型 -->
 	<!-- resultType：输出结果的所映射的java类型（单条结果所对应的java类型） -->
 	<select id="findUserById" parameterType="int"
-		resultType="com.itheima.mybatis.po.User">
+		resultType="com.bingley.spring.topic.mybatisdemo.po.User">
 		SELECT * FROM USER WHERE id =#{id}
 	</select>
 
@@ -22,7 +22,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	<!-- ${value}：里面的value表示输入参数的参数名称，如果该参数是简单类型，那么${}里面的参数名称必须是value -->
 	<!-- ${}这种写法存在sql注入的风险，所以要慎用！！但是在一些场景下，必须使用${}，比如排序时，动态传入排序的列名，${}会原样输出，不加解释 -->
 	<select id="findUsersByName" parameterType="java.lang.String"
-		resultType="com.itheima.mybatis.po.User">
+		resultType="com.bingley.spring.topic.mybatisdemo.po.User">
 		SELECT * FROM USER WHERE username LIKE '%${value}%'
 	</select>
 
@@ -30,7 +30,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	<!-- selectKey：查询主键，在标签内需要输入查询主键的sql -->
 	<!-- order：指定查询主键的sql和insert语句的执行顺序，相当于insert语句来说 -->
 	<!-- LAST_INSERT_ID：该函数是mysql的函数，获取自增主键的ID，它必须配合insert语句一起使用 -->
-	<insert id="insertUser" parameterType="com.itheima.mybatis.po.User">
+	<insert id="insertUser" parameterType="com.bingley.spring.topic.mybatisdemo.po.User">
 		<selectKey keyProperty="id" resultType="int" order="AFTER">
 			SELECT LAST_INSERT_ID() 
 		</selectKey>
@@ -41,7 +41,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	</insert>
 	
 	<!-- 自增主键之UUID -->
-	<insert id="insertUser2" parameterType="com.itheima.mybatis.po.User">
+	<insert id="insertUser2" parameterType="com.bingley.spring.topic.mybatisdemo.po.User">
 		<selectKey keyProperty="id" resultType="string" order="BEFORE">
 			SELECT UUID() 
 		</selectKey>
@@ -52,7 +52,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	</insert>
 	
 	<!-- 自增主键之UUID -->
-	<insert id="insertUser3" parameterType="com.itheima.mybatis.po.User">
+	<insert id="insertUser3" parameterType="com.bingley.spring.topic.mybatisdemo.po.User">
 		<selectKey keyProperty="id" resultType="int" order="BEFORE">
 			SELECT seq.nextval FROM dual
 		</selectKey>

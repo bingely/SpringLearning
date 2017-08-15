@@ -5,7 +5,7 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
 <configuration>
 
 	<!-- 加载java的配置文件或者声明属性信息 -->
-	<properties resource="db.properties">
+	<properties resource="config/db.properties">
 		<property name="db.username" value="123" />
 	</properties>
 
@@ -38,7 +38,7 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
 
 	<!-- 加载映射文件 -->
 	<mappers>
-		<mapper resource="User.xml" />
+		<mapper resource="config/User.xml" />
 	<!-- <mapper resource="mapper/UserMapper.xml" /> -->
 
 		<!-- 批量加载映射文件 -->

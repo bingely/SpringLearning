@@ -1,12 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
        xsi:schemaLocation="http://www.springframework.org/schema/beans 
-       					   http://www.springframework.org/schema/beans/spring-beans.xsd">
-	<!-- 配置service 
-		<bean> 配置需要创建的对象
-			id ：用于之后从spring容器获得实例时使用的
-			class ：需要创建实例的全限定类名
-	-->
-	<bean id="userServiceId" class="com.bingley.spring.topic.g_annotion.a_ioc.UserServiceImpl"></bean>
+       					   http://www.springframework.org/schema/beans/spring-beans.xsd
+       					   http://www.springframework.org/schema/context
+       					   http://www.springframework.org/schema/context/spring-context.xsd">
+    <!-- 配置service
+        <bean> 配置需要创建的对象
+            id ：用于之后从spring容器获得实例时使用的
+            class ：需要创建实例的全限定类名
+
+            声明了具体的实现类
+    -->
+    <!--<bean id="userServiceId" class="com.bingley.spring.topic.g_annotion.a_ioc.UserServiceImpl"></bean>-->
+
+    <!-- 组件扫描，扫描含有注解的类 -->
+    <context:component-scan base-package="com.bingley.spring.topic.g_annotion.a_ioc"></context:component-scan>
 </beans>
+

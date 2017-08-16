@@ -19,6 +19,9 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		INSERT INTO USER
 		(username,birthday,sex,address)
 		VALUES(#{username},#{birthday},#{sex},#{address})
+
+
+
 	</insert>
 </mapper>
 

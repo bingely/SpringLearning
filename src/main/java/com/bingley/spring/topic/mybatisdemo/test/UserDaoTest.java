@@ -15,50 +15,45 @@ import java.io.InputStream;
 import static org.junit.Assert.fail;
 
 /**
- *  
- * <p>
- * Title: UserDaoTest
- * </p>
- *  
- * <p>
- * Description: TODO(这里用一句话描述这个类的作用) 
- * <p>
- * <p>
- * Company: www.itcast.com
- * </p>
- *  @author 传智.关云长   @date 2015-12-21 下午2:59:49    @version 1.0
+ * Author:  Mr.bingley
+ * Version:
+ * Date:  2017/8/15
  */
 public class UserDaoTest {
 
-	private SqlSessionFactory sqlSessionFactory;
-	@Before
-	public void setUp() throws Exception {
-		// 读取配置文件
-		// 全局配置文件的路径
-		String resource = "config/SqlMapConfig.xml";
-		InputStream inputStream = Resources.getResourceAsStream(resource);
+    private SqlSessionFactory sqlSessionFactory;
 
-		// 创建SqlSessionFactory
-		sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
-	}
-	@Test
-	public void testFindUserById() throws Exception {
+    // 关键词Before
+    @Before
+    public void setUp() throws Exception {
+        // 读取配置文件
+        // 全局配置文件的路径
+        String resource = "config/SqlMapConfig.xml";
+        InputStream inputStream = Resources.getResourceAsStream(resource);
 
-		// 创建UserDao
-		UserDao dao = new UserDaoImpl(sqlSessionFactory);
+        // 创建SqlSessionFactory
+        sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
+    }
 
-		User user = dao.findUserById(1);
-		System.out.println(user);
-	}
 
-	@Test
-	public void testFindUsersByName() {
-		fail("Not yet implemented");
-	}
+    @Test
+    public void testFindUserById() throws Exception {
 
-	@Test
-	public void testInsertUser() {
-		fail("Not yet implemented");
-	}
+        // 创建UserDao
+        UserDao dao = new UserDaoImpl(sqlSessionFactory);
+
+        User user = dao.findUserById(1);
+        System.out.println(user);
+    }
+
+    @Test
+    public void testFindUsersByName() {
+        fail("Not yet implemented");
+    }
+
+    @Test
+    public void testInsertUser() {
+        fail("Not yet implemented");
+    }
 
 }

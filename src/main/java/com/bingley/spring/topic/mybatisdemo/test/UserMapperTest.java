@@ -15,20 +15,12 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- *  
- * <p>
- * Title: UserMapperTest
- * </p>
- *  
- * <p>
- * Description: TODO(这里用一句话描述这个类的作用) 
- * <p>
- * <p>
- * Company: www.itcast.com
- * </p>
- *  @author 传智.关云长   @date 2015-12-21 下午3:21:55    @version 1.0
- */
+ /**
+   * 
+   * Author:  Mr.bingley
+   * Version:
+   * Date:  2017/8/15
+   */
 public class UserMapperTest {
 
 	private SqlSessionFactory sqlSessionFactory;

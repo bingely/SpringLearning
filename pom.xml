@@ -9,6 +9,10 @@
     <modules>
         <module>logservice</module>
         <module>javabasic</module>
+        <module>warningServices</module>
+        <module>common_spring</module>
+        <module>../warningservices</module>
+        <module>warningservices</module>
     </modules>
     <name>springbest Maven Webapp</name>
     <url>http://maven.apache.org</url>

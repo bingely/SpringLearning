@@ -1,4 +1,4 @@
-package com.bingley.learning;
+package com.bingley.services;
 
 import java.net.MalformedURLException;
 import java.net.URI;

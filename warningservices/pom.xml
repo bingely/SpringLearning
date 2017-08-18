@@ -7,9 +7,9 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>logservice</artifactId>
+    <artifactId>warningservices</artifactId>
     <packaging>war</packaging>
-    <name>logservice Maven Webapp</name>
+    <name>warningservices Maven Webapp</name>
     <url>http://maven.apache.org</url>
     <dependencies>
         <dependency>
@@ -18,13 +18,8 @@
             <version>3.8.1</version>
             <scope>test</scope>
         </dependency>
-        <dependency>
-            <groupId>com.bingley.learning</groupId>
-            <artifactId>warningservices</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
     </dependencies>
     <build>
-        <finalName>logservice</finalName>
+        <finalName>warningservices</finalName>
     </build>
 </project>
